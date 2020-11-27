@@ -1,5 +1,9 @@
 function last(arr,n=1) {
-    return arr.slice(arr.length - n)
+    if (n > arr.length-1) {
+        return arr
+    } else {
+        return arr.slice(arr.length - n);
+    }
 }
 
 function joinArray(arr) {

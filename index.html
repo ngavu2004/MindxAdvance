@@ -1,15 +1,31 @@
-<html>
-    <head>
-        <title>Page title</title>
-        <meta>
-    </head>
-    <body id="nice-body">
-        To do: <input type="text" id="myText" placeholder="Type your to do">
-        <button onclick="printTodo()">Try it</button>
-        <h1>To do list</h1>
-        <ul id="toDoList">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            margin-top: 10px;
+        }
+    </style>
+</head>
 
-        </ul>
-        <script src="bai1.js"></script>
-    </body>
+<body id="nothing">
+    <div id="Todolist" style="display: none">
+        <ul id="list"></ul>
+    </div>
+    <form onsubmit="themvieclam()">
+        <p>Them viec can lam o duoi</p>
+        <input type="text" id="box">
+        <input type="submit" value="Submit">
+    </form>
+    <!-- <button onclick="pushvieclam()">Push viec lam</button> -->
+    <button onclick="printtodolist()" style="margin-top:10px;">Print to do list</button>
+    <div><button onclick="titleCase()">Change Character</button></div>
+    <div id="cautraloi">Câu trả lời : </div>
+    <div><button onclick="result()">Mau cua ban</button></div>
+    <script src="blabla.js"></script>
+    <script src="bai1.js"></script>
+</body>
 </html>
