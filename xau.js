@@ -1,30 +1,9 @@
-let vieccanlam = []
-let text = ""
-let loopwhile = 0
-function themvieclam() {
-    let inputvalue = document.getElementById("box").value
-    vieccanlam.push(inputvalue)
-    // vieccanlam += vieccanlam.push(inputvalue)
-    console.log(vieccanlam)
-    event.preventDefault()
-    // let list = document.getElementById("list")
-    while (vieccanlam[loopwhile]) {
-        text += "<li>" + vieccanlam[loopwhile];
-        loopwhile++;
-    }
-    document.getElementById("list").innerHTML = text
-}
-console.log(vieccanlam)
-let a = document.getElementById("Todolist")
-a = false
-function printtodolist() {
-    if (a) {
-        document.getElementById("Todolist").style.display = "none"
-        a = false
-    } else {
-        document.getElementById("Todolist").style.display = "block"
-        a = true
-    }
+function addToDo() {
+    let parent = document.getElementById("list");
+    let todo = document.getElementById("todo").value;
+    let newItem = document.createElement("LI");
+    newItem.innerHTML = todo;
+    parent.appendChild(newItem);
 }
 
 function getColor(color) {

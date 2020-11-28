@@ -4,27 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        div{
-            margin-top: 10px;
-        }
-    </style>
 </head>
 
-<body id="nothing">
-    <div id="Todolist" style="display: none">
-        <ul id="list"></ul>
+<body id="container">
+    <div id="Todolist">
+        <h1>My to do list:</h1>
+        <ul id="list">
+
+        </ul>
     </div>
-    <form onsubmit="themvieclam()">
-        <p>Them viec can lam o duoi</p>
-        <input type="text" id="box">
-        <input type="submit" value="Submit">
-    </form>
-    <!-- <button onclick="pushvieclam()">Push viec lam</button> -->
-    <button onclick="printtodolist()" style="margin-top:10px;">Print to do list</button>
-    <div><button onclick="titleCase()">Change Character</button></div>
-    <div id="cautraloi">Câu trả lời : </div>
-    <div><button onclick="result()">Mau cua ban</button></div>
+    To do: <input type="text" id="todo" placeholder="Type your to do">
+    <button onclick="addToDo()">Add</button>
+
     <script src="xau.js"></script>
 </body>
 </html>
