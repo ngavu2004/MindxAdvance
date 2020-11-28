@@ -26,25 +26,37 @@ function printtodolist() {
         a = true
     }
 }
-a = prompt("chữ cần đổi")
-let ans = a.split('').map(function (c) {
-    return c === c.toUpperCase()
-        ? c.toLowerCase()
-        : c.toUpperCase()
-}).join('')
-function titleCase(){
-console.log(ans)}
-let pos = prompt("Nhap vi tri mau")
-color = ["Blue ", "Green", "Red", "Orange", "Violet", "Indigo", "Yellow "];
-o = ["th", "st", "nd", "rd"]
-function result(){
-    if(pos == 1){
-        cautraloi.innerHTML += "1st choice is " + color[0]
-    }else if(pos == "2"){
-        cautraloi.innerHTML += "2nd choice is " + color[1]
-    }else if(pos == "3"){
-        cautraloi.innerHTML += "3rd choice is " + color[2]
-    }else{
-        cautraloi.innerHTML += pos + "th choice is " + color[pos - 1]
+
+function getColor(color) {
+    let arr = ["th","st","nd","rd"];
+    for (let i = 1; i <= color.length; i++) {
+        if (i > 3) {
+            console.log(i+ arr[0] +" choice is "+ color[i-1]);
+        } else {
+            console.log(i + arr[i] + " choice is " + color[i-1]);
+        }
     }
+}
+
+function last(arr,n=1) {
+    if (n > arr.length-1) {
+        return arr
+    } else {
+        return arr.slice(arr.length - n);
+    }
+}
+
+function joinArray(arr) {
+    return arr.join(",")
+}
+
+function sortArray(arr) {
+    var maxValue = Math.max.apply(null, arr);
+    var minValue = Math.min.apply(null, arr);
+    var sortedArray = arr.sort(function(a, b){return a - b});
+    var reverseArr = sortedArray.reverse();
+    console.log("Max: ",maxValue);
+    console.log("Min: ",minValue);
+    console.log("Array: ",sortedArray);
+    console.log("Reverse Array: ",reverseArr);
 }
