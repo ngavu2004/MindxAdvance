@@ -12,6 +12,7 @@ function hienso(input) {
         rel = 0
         num = 0
         ternary=""
+        document.getElementById("screen").value = ""
     }
     else if (input == "=") {
         num = Number(a)
