@@ -8,6 +8,11 @@ function hienso(input) {
         ternary = input
         console.log(rel);
         document.getElementById("screen").value = ""}
+    else if (input == "Clear") {
+        rel = 0
+        num = 0
+        ternary=""
+    }
     else if (input == "=") {
         num = Number(a)
         console.log(num);
@@ -30,11 +35,7 @@ function hienso(input) {
         
     } else if (Number(input) != NaN) {
          document.getElementById("screen").value = a + input.toString();
-    } else if (input == "Clear") {
-        rel = 0
-        num = 0
-        ternary=""
-    }
+    } 
 }
 
 
