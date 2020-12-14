@@ -1,6 +1,6 @@
 var answers = ["answers", "bruise", "cdad", "ddads", "gdfa"];
-
-function chiecNonKyDieu(params) {
+cases = 5
+function chiecNonKyDieu() {
     var str = answers[Math.floor(Math.random() * answers.length)];
 
     var chances = 5;
@@ -42,5 +42,7 @@ function chiecNonKyDieu(params) {
         }
     }
 }
-
-chiecNonKyDieu();
+while (cases > 0) {
+    cases -= 1;
+    chiecNonKyDieu();
+}
