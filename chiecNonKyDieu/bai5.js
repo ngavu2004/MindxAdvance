@@ -16,6 +16,7 @@ function chiecNonKyDieu() {
             // console.log(index);
         }
     }
+    alert(lives)
     // console.log(lives);
 
     function check(a) {
@@ -30,19 +31,23 @@ function chiecNonKyDieu() {
     }
     function guest() {
         while (chances > 0) {
-            input = prompt("Nhap cau tra loi")
-            if (check(input) == true) {
-                lives = lives.replace(lives[int], input);
-                // console.log(lives);
-                alert(lives)
-            } else if (chances == 0 || lives.search("_") == -1) {
+            if (lives.search("_") != -1) {
+                input = prompt("Nhap cau tra loi")
+                if (check(input) == true) {
+                    lives = lives.replace(lives[int], input);
+                    // console.log(lives);
+                    alert(lives)
+                } else if (check(input) == false && chances > 0) {
+                    chances -= 1;
+                    alert(lives);
+                    // console.log(lives);
+                    chances -= 1;
+                }
+
+            } else if (lives.search("_") == -1) {
                 return;
-            } else if (check(input) == false && chances > 0) {
-                chances -= 1;
-                alert(lives);
-                // console.log(lives);
-                chances -= 1;
             }
+
         }
     }
     guest();
