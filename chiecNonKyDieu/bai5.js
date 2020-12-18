@@ -1,5 +1,5 @@
 var answers = ["answers", "bruise", "cdad", "ddads", "gdfa"];
-cases = 5
+cases = 5;
 function chiecNonKyDieu() {
     var str = answers[Math.floor(Math.random() * answers.length)];
 
