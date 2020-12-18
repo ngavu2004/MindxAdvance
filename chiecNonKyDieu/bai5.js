@@ -7,6 +7,7 @@ function chiecNonKyDieu() {
     var lives = str;
     var indexs = [];
     var int = 0;
+
     for (let index = 0; index < lives.length / 2; index++) {
         var ind = Math.floor(Math.random() * lives.length);
         if (indexs.includes(ind) != true) {
@@ -34,14 +35,22 @@ function chiecNonKyDieu() {
                 lives = lives.replace(lives[int], input);
                 // console.log(lives);
                 alert(lives)
-            } else {
+            } else if (chances == 0 || lives.search("_") == -1) {
+                return;
+            } else if (check(input) == false && chances > 0) {
+                chances -= 1;
                 alert(lives);
                 // console.log(lives);
                 chances -= 1;
             }
         }
     }
+    guest();
+    if (chances == 0 || lives.search("_") == -1) {
+        return;
+    }
 }
+
 while (cases > 0) {
     cases -= 1;
     chiecNonKyDieu();
