@@ -1,0 +1,141 @@
+/* Color palette:
+  purple: #5B2333;
+  white: #F7F4F3;
+  gray: #564D4A;
+  red-pink: #F24333;
+  red: #BA1B1D;
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  content: "";
+  background: linear-gradient(rgba(86, 77, 74, 0.4), rgba(86, 77, 74, 0.4)), url(fashion.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* Heading */
+.welcome {
+  background-color: rgba(86, 77, 74, 0.9);
+  position: relative;
+  width: 100%;
+  margin: auto;
+  padding: 10%;
+  padding-top: 5%;
+  color: aliceblue;
+}
+
+
+
+.welcome h1 {
+  position: relative;
+  font-family: 'Anton', sans-serif;
+  color: #BA1B1D;
+  font-size: 800%;
+}
+
+.welcome h3 {
+  position: relative;
+  top: 0px;
+  font-family:'PT Serif', serif;
+  font-size: 25px;
+}
+
+.welcome .btn-container {
+  width: 30%;
+  margin-top: 1%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.btn-container div {
+  background-color: #BA1B1D;
+  font-family: 'PT Serif', serif;
+  font-size: 20px;
+  border: solid 1px white;
+  padding: 5%;
+}
+
+.btn-container div:hover {
+  opacity: 0.6;
+}
+
+  /* Navigation bar */
+.nav {
+  text-align: center;
+  height: 10%;
+  background-color: #BA1B1D;
+  margin-top: 0px;
+  display: flex;
+  flex-direction: row;
+  padding: 0px;
+  justify-content: space-around;
+}
+
+.nav .nav-e {
+  position: relative;
+  font-family: 'PT Serif', serif;
+  margin: 0;
+  width: 25%;
+  font-size: 150%;
+  color: aliceblue;
+  padding: 15px;
+  
+}
+
+.nav-e:hover {
+  background-color: #F24333;
+}
+
+/* About me */
+
+
+.accesories {
+  position: relative;
+  height: 80%;
+  background: #BA1B1D;
+  width: 50%;
+  margin: auto;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  padding: 5%;
+}
+
+.text-block  {
+  position: absolute;
+  width: 50%;
+  text-align: left;
+  color: #F7F4F3;
+  font-family:'PT Serif', serif;
+  font-size: 30px;
+  padding-right: 50px;
+}
+
+.about img {
+  width: 40%;
+  position: absolute;
+  margin: auto;
+  right: 15px;
+}
+
+
+/* .btn-container {
+  position: relative;
+  margin-top: 4%;
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.btn-1 {
+  font-size: 20px;
+  background-color: #F24333;
+  padding: 6%;
+  margin: auto;
+} */

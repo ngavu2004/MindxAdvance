@@ -1,5 +1,5 @@
 var answers = ["answers", "bruise", "cdad", "ddads", "gdfa"];
-cases = 5;
+cases = 5
 function chiecNonKyDieu() {
     var str = answers[Math.floor(Math.random() * answers.length)];
 
@@ -20,13 +20,18 @@ function chiecNonKyDieu() {
     // console.log(lives);
 
     function check(a) {
-        for (let index = 0; index < indexs.length; index++) {
-            if (a == str[indexs[index]] && lives[indexs[index]] == "_") {
-                int = indexs[index];
-                return true;
-                break;
-            };
+        if (a.length > 1 || isNaN(a) == false) {
+            alert("Ban khong the nhap hon 2 ky tu hoac nhap so")
+        } else {
+            for (let index = 0; index < indexs.length; index++) {
+                if (a == str[indexs[index]] && lives[indexs[index]] == "_") {
+                    int = indexs[index];
+                    return true;
+                    break;
+                };
+            }
         }
+
         return false;
     }
     function guest() {

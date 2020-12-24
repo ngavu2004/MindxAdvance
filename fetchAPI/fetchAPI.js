@@ -1,9 +1,8 @@
-url = "https://api.unsplash.com/"
-let response = fetch(url)
+url = "https://api.unsplash.com/search/photos?page=3&query=office>; rel='last' "
 
 async function getAPI(url){
-    const response = await fetch(url);
-    var data = await response.json();
+    let response = await fetch(url);
+    var data = await response.text();
     console.log(data);
 }
 
