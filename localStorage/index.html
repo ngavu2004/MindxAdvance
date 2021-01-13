@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+</head>
+<style>
+    .root {
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+    }
+    .signIn {
+        visibility: hidden;
+    }
+    .signIn, .signUp {
+        position: absolute;
+        top: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;   
+    }
+    .signUp, .signIn {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: center;
+    }
+
+    .signUp .item, .signIn .item {
+        margin: 10px;
+    }
+
+
+</style>
+<body>
+    <div class="root">
+        <div class="signUp" id="signUp">
+            <div><h1>Sign Up</h1></div>
+            <div><input type="text" class='item' id='username' placeholder="Username"></div>
+            <div><input type="text" class='item' id='pass' placeholder="Password"></div>
+            <div><input type="text" class='item' id='email' placeholder="Email"></div>
+            <div><button id='btn' onclick="signUp()">Sign Up</button></div>
+            <p id="message"></p>
+        </div>
+
+        <div class="signIn" id="signIn">
+            <div><h1>Sign In</h1></div>
+            <div><input type="text" class='item' id='name' placeholder="Username"></div>
+            <div><input type="text" class='item' id='password' placeholder="Password"></div>
+            <div><input type="text" class='item' id='mail' placeholder="Email"></div>
+            <div><button id='signin' onclick="signIn()">Sign In</button></div>
+            <p id="logInMessage"></p>
+        </div>
+    </div>
+    <script src="localStorage.js"></script>
+</body>
+</html>
